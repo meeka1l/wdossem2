@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tickets page</title>
+        <link rel="stylesheet" href="css/Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <!-- Google Font Link for Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        
+
+
+         </head>
+    <body class="ticketbody">
+        
+        <h1 class="ticketheading">BUY TICKETS</h1>  
+        <ul>
+          <li><a class="buttons" href="turtlehatcheries.html">Main Page</a></li>
+          <li><a class="buttons" href="donatepage.html">Help Turtles</a></li>
+      </ul>
+
+    <div class="paymentpages">
+        
+        <div class="currentpage">Tickets</div>
+        <div class="ppages">Details</div>
+        <div class="ppages">Payment</div>
+        <div class="ppages">Confirm</div>
+        
+    </div>
+    <div class="ticketspagebg">
+   
+<p class="bigfont">Pick a date for your visit:</p>
+<div class="ticketwrapper">
+    <header id="ticketheader">
+      <p class="current-date"></p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+        <span id="next" class="material-symbols-rounded">chevron_right</span>
+      </div>
+    </header>
+    <div class="calendar">
+      <ul class="weeks">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+      <ul class="days"></ul>
+    </div>
+  </div>
+  <p class="bigfont">Pricing List</p>
+  <p class="smallfont">Adult - 18 years and older</p>
+  <p class="smallfont">Child - 4 to 17 years</p>
+  <p class="smallfont">Infant - Under 4 years</p>
+  
+  <table class="summarytable">
+    <thead>
+      <tr>
+        <th>Peak Hours</th>
+        <th>Normal Hours</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Foreign Adult - $13</td>
+        <td>Foreign Adult - $10</td>
+       
+      </tr>
+      <tr>
+        <td>Foreign Child - $8</td>
+        <td>Foreign Child - $5</td>
+       
+      </tr>
+      <tr>
+        <td>SL Adult - $6</td>
+        <td>SL Adult - $4</td>
+       
+      </tr>
+      <tr>
+        <td>SL Child - $3</td>
+        <td>SL Child - $2</td>
+       
+      </tr>
+      </tbody>
+      </table>
+      <p class="bigfont">Pick a time-slot for your visit:</p>
+<div class="timeslotdiv">
+
+
+
+<select id="durationinput" size="5">
+  <option value="normal">7:00am - 8:00am</option>
+  <option value="normal">8:00am - 9:00am</option>
+  <option value="normal">9:00am - 10:00am</option>
+  <option value="peak">10:00am - 11:00am(peak)</option>
+  <option value="peak">11:00am - 12:00pm(peak)</option>
+  <option value="peak">12:00pm - 1:00pm(peak)</option>
+  <option value="normal">1:00pm - 2:00pm</option>
+  <option value="normal">2:00pm - 3:00pm</option>
+  <option value="peak">3:00pm - 4:00pm(peak)</option>
+  <option value="peak">4:00pm - 5:00pm(peak)</option>
+  <option value="peak">5:00pm - 6:00pm(peak)</option>
+  <option value="normal">6:00pm - 7:00pm</option>
+</select>
+
+</div>
+
+<p class="bigfont">Guests</p>
+
+<div class="guestwrapper">
+  
+  <div class="guestsection">
+<div class="lettersection">
+<label>SL Adult</label>
+</div>
+<div class="numbersection">
+<button type="button" class="guestbtn" id="minusadult">-</button>
+<label id="adultguest">0</label>
+<button type="button" class="guestbtn" id="plusadult">+</button><br>
+<br>
+</div>
+</div>
+
+<div class="guestsection">
+<div class="lettersection">
+<label>SL Child</label>
+</div>
+<div class="numbersection">
+<button type="button" class="guestbtn" id="minuschild">-</button>
+<label id="childguest">0</label>
+<button type="button" class="guestbtn" id="pluschild">+</button>
+<br><br>
+</div>
+</div>
+
+<div class="guestsection">
+<div class="lettersection">
+<label>Foreign Adult</label>
+</div>
+<div class="numbersection">
+<button type="button" class="guestbtn" id="minusfadult">-</button>
+<label id="fadultguest">0</label>
+<button type="button" class="guestbtn" id="plusfadult">+</button>
+<br><br>
+</div>
+</div>
+
+<div class="guestsection">
+<div class="lettersection">
+<label>Foreign Child</label>
+</div>
+<div class="numbersection">
+<button type="button" class="guestbtn" id="minusfchild">-</button>
+<label id="fchildguest">0</label>
+<button type="button" class="guestbtn" id="plusfchild">+</button>
+<br><br>
+</div>
+</div>
+
+<div class="guestsection">
+<div class="lettersection">
+<label>Infant</label>
+</div>
+<div class="numbersection">
+<button type="button" class="guestbtn" id="minusinfant">-</button>
+<label id="infantguest">0</label>
+<button type="button" class="guestbtn" id="plusinfant">+</button>
+<br><br>
+</div>
+</div>
+</div>
+
+
+<div class="summarytable-container">
+<table class="summarytable">
+  <thead>
+    <tr>
+      <td class="ttabled">Date</td>
+      <td class="ttabled" id="userdate"></td>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ttabled">Duration</td>
+      <td class="ttabled" id="timeslotcell">7:00am - 8:00am</td>
+     
+    </tr>
+    <tr>
+      <th class="ttableh">Tickets</th>
+      <th class="ttableh">Charges</th>
+     
+    </tr>
+    <tr>
+      <td class="ttabled">SL Adult</td>
+      <td class="ttabled" id="sladultcell"></td>
+     
+    </tr>
+    <tr>
+      <td class="ttabled">SL Child</td>
+      <td class="ttabled" id="slchildcell"></td>
+     
+    </tr>
+    <tr>
+      <td class="ttabled">Foreign Adult</td>
+      <td class="ttabled" id="fadultcell"></td>
+     
+    </tr>
+    <tr>
+      <td class="ttabled">Foreign Child</td>
+      <td class="ttabled" id="fchildcell"></td>
+     
+    </tr>
+    <tr>
+      <td class="ttabled">Infants</td>
+      <td class="ttabled" id="infantcell"></td>
+     
+    </tr>
+    <tr>
+      <th class="ttableh">Total payable</th>
+      <th class="ttableh" id="totalbill"></th>
+     
+    </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+<div class="centerdiv">
+<a href="detailspage.html"> <button type="button" id="continuebutton">Continue</button></a>
+</div>
+
+
+<script src="index.js"></script>
+</div>
+<footer class="footer">
+  <div class="footernav">
+      <ul>
+      <li><a href="turtlehatcheries.html">Main Page</a></li>
+      <li><a href="donatepage.html">Help Turtles</a></li>
+      
+      
+  </ul>
+</div>
+<p>&copy; 2023 UNENDANGERED-TeamTurtles. All rights reserved.</p>
+<p>Website by MEEKAIL</p>
+</footer>
+    </body>
+</html>

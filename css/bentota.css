@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+p{
+    
+    padding: 1%;
+    }
+    
+    
+    #logo{
+        font-size: 100px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    header{
+        font-size: 20px;
+            text-align: center;
+            background-image: url(../img/mainturtle.jpg);
+            color: white;
+            padding: 3em;
+            margin-bottom: 2px;
+            margin-top: 0%;
+            background-repeat:no-repeat;
+            background-position: 0px -70px;
+            background-attachment: fixed;
+            background-size:cover;
+            
+           
+        
+    }
+    
+    head{
+        background-color: rgba(0, 24, 14, 0.548);
+        
+    }
+    body{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 2%;
+    }
+    h3{
+        color: rgb(35, 230, 80);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        background-color:rgb(0, 0, 0, 40%);
+        overflow: hidden;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    li{
+        
+        float:inline-end;
+    }
+    li a{
+        display:block;
+        color:rgb(255, 255, 255);
+        text-align: center;
+        padding: 2px 4px;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        background-color: rgba(0, 160, 102, 0.486);
+        color: white;
+    }
+    .active {
+        
+        color: rgb(0, 0, 0);
+    }
+    
+    .footer{
+        width:100%;
+       padding: 2%;
+        bottom:0;
+        background: linear-gradient(to right, #00093c, #800011);
+        margin-top: 20px;
+    }
+    .footernav{
+        margin: 30px 0;
+    }
+    .footernav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .footernav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .footernav ul li a:hover{
+        opacity: 1;
+    }
+    .heading{
+        text-align: center;
+        font-size: 45px;
+        font-family: fantasy;
+    }
+    .mainimg{
+        width: 100%;
+    }
+    .longpanel{
+        position: relative;
+        background-color: black;
+       background-position:center center;
+background-size: 600%;
+        color: white;
+        width: 20%;
+        padding: 3%;
+        opacity: 70%;
+        transition: 0.5s;
+        margin: 3%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .longpanel:hover{
+        opacity: 1;
+        margin: 2%;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        background-image: url(../img/bentotalargepanel.webp);
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .longpanel2{
+        position: relative;
+        background-color: rgb(0, 0, 0);
+       background-position:center center;
+background-size: 600%;
+        color: white;
+        width: 20%;
+        padding: 3%;
+        opacity: 70%;
+        transition: 0.5s;
+        margin: 3%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .longpanel2:hover{
+        opacity: 1;
+        margin: 2%;
+        background-color: rgb(0, 65, 27);
+    }
+    .longpanel3{
+        position: relative;
+        background-color: rgb(0, 0, 0);
+       background-position:center center;
+background-size: 600%;
+        color: white;
+        width: 20%;
+        padding: 3%;
+        opacity: 70%;
+        transition: 0.5s;
+        margin: 3%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .longpanel3:hover{
+        opacity: 1;
+        margin: 2%;
+        background-color: rgb(12, 0, 65);
+    }
+    .darkbg{
+        background-color: rgb(25, 25, 25);
+        padding: 10px;
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lightbg{
+        background-color: rgba(255, 255, 255, 0.667);
+        transition: 0.5s;
+        margin: 3%;
+    }
+ .darkbg:hover{
+        background-color: rgb(168, 168, 168);
+    }
+    .lightbg:hover{
+        background-color: rgb(27, 27, 27);
+        color: white;
+        margin: 1%;
+    }
+    .footer p{
+        color: rgba(255, 255, 255, 0.539);
+        transition: 0.5s;
+        
+    }
+    .footer p:hover{
+        color: white;
+    }
+    @media screen and (max-width: 600px) {
+        #logo{
+            font-size: 30px;
+            text-align: center !important;
+        }
+        .longpanel{
+            position: relative;
+            background-color: black;
+           background-position:center center;
+    background-size: 600%;
+            color: white;
+            width: 100%;
+            padding: 3%;
+            opacity: 70%;
+            transition: 0.5s;
+            margin: 3%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            background-image: url(../img/bentotalargepanel.webp);
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 10px;
+        }
+        .longpanel2{
+            position: relative;
+            background-color: rgb(0, 0, 0);
+           background-position:center center;
+    background-size: 600%;
+            color: white;
+            width: 100%;
+            padding: 3%;
+            opacity: 70%;
+            transition: 0.5s;
+            margin: 3%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .longpanel3{
+            position: relative;
+            background-color: rgb(0, 0, 0);
+           background-position:center center;
+    background-size: 600%;
+            color: white;
+            width: 100%;
+            padding: 3%;
+            opacity: 70%;
+            transition: 0.5s;
+            margin: 3%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .darkbg{
+            background-color: rgb(25, 25, 25);
+            padding: 10px;
+            transition: 0.5s;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+    }
